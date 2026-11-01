@@ -1,0 +1,1116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Morrowave Digital - Premium websites, branding and digital marketing for growing businesses.">
+<title>Morrowave Digital | Build Your Digital Future</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #080914;
+  --card: #111326;
+  --purple: #9575ff;
+  --cyan: #61e4ff;
+  --white: #f8f8ff;
+  --muted: #a1a3bb;
+  --border: rgba(255,255,255,.09);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.container {
+  width: min(1150px, 90%);
+  margin: auto;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg,#b49cff,#61e4ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+button, a { -webkit-tap-highlight-color: transparent; }
+
+/* NAVBAR */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background: rgba(8,9,20,.78);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+}
+
+nav {
+  height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Space Grotesk';
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.logo span { color: var(--purple); }
+
+.logo small {
+  display: block;
+  font-family: 'DM Sans';
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 13px;
+  color: #d0d0e2;
+}
+
+.nav-links a:hover { color: var(--cyan); }
+
+.nav-btn, .btn {
+  padding: 13px 21px;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 13px;
+  display: inline-block;
+  transition: .25s;
+}
+
+.nav-btn, .primary-btn {
+  background: linear-gradient(100deg,#9878ff,#62dfff);
+  color: #080914;
+}
+
+.btn:hover, .nav-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px #9575ff35;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  color: white;
+  border: 0;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 850px;
+  padding: 180px 0 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background: #8155ff;
+  filter: blur(180px);
+  opacity: .19;
+  top: 70px;
+  right: -150px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: #37cfff;
+  filter: blur(180px);
+  opacity: .12;
+  bottom: 0;
+  left: -150px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-content {
+  max-width: 850px;
+  position: relative;
+  z-index: 2;
+}
+
+.tag {
+  display: inline-block;
+  padding: 9px 15px;
+  border: 1px solid #9575ff55;
+  border-radius: 30px;
+  color: #c7b6ff;
+  background: #9575ff10;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-family: 'Space Grotesk';
+  font-size: clamp(48px,7.5vw,88px);
+  line-height: 1.08;
+  letter-spacing: -4px;
+  margin: 30px 0 24px;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 17px;
+  max-width: 600px;
+  line-height: 1.9;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.secondary-btn {
+  border: 1px solid var(--border);
+  color: white;
+  background: #ffffff08;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 55px;
+  margin-top: 65px;
+  flex-wrap: wrap;
+}
+
+.stat h3 {
+  font-size: 27px;
+  font-family: 'Space Grotesk';
+}
+
+.stat p {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+/* GENERAL SECTION */
+
+section { padding: 110px 0; }
+
+.section-title {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 55px;
+}
+
+.section-title span {
+  color: var(--purple);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.section-title h2 {
+  font-family: 'Space Grotesk';
+  font-size: clamp(32px,5vw,50px);
+  margin: 15px 0;
+  letter-spacing: -2px;
+}
+
+.section-title p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* SERVICES */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: linear-gradient(145deg,#17192f,#0e1020);
+  border: 1px solid var(--border);
+  border-radius: 17px;
+  padding: 32px;
+  transition: .3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #9575ff88;
+}
+
+.service-icon {
+  width: 55px;
+  height: 55px;
+  background: #9575ff18;
+  border: 1px solid #9575ff44;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  border-radius: 14px;
+}
+
+.service-card h3 {
+  font-size: 19px;
+  margin: 22px 0 10px;
+}
+
+.service-card p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* ABOUT */
+
+.about {
+  background: #0d0f20;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.about-visual {
+  min-height: 350px;
+  border: 1px solid var(--border);
+  border-radius: 25px;
+  background:
+    radial-gradient(circle at 70% 30%,#795bff55,transparent 45%),
+    linear-gradient(145deg,#191b38,#0b0d1c);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.about-visual strong {
+  font-family: 'Space Grotesk';
+  font-size: clamp(40px,6vw,65px);
+  letter-spacing: -4px;
+}
+
+.about-visual p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.about-text h2 {
+  font-family: 'Space Grotesk';
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 15px 0 20px;
+}
+
+.about-text p {
+  color: var(--muted);
+  line-height: 1.9;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.check {
+  margin: 13px 0;
+  font-size: 14px;
+  color: #dddff0;
+}
+
+.check span { color: var(--cyan); margin-right: 10px; }
+
+/* PRICING */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.price-card {
+  padding: 32px 26px;
+  background: #111326;
+  border: 1px solid var(--border);
+  border-radius: 19px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: .3s;
+}
+
+.price-card:hover { transform: translateY(-7px); }
+
+.price-card.popular {
+  border: 1px solid var(--purple);
+  background: linear-gradient(155deg,#211b42,#111326 60%);
+  box-shadow: 0 0 45px #9575ff16;
+}
+
+.popular-label {
+  position: absolute;
+  top: -13px;
+  right: 20px;
+  background: linear-gradient(90deg,#9575ff,#61e4ff);
+  color: #080914;
+  font-size: 10px;
+  font-weight: 900;
+  padding: 7px 13px;
+  border-radius: 20px;
+}
+
+.plan-name {
+  color: #bcaaff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.price {
+  font-family: 'Space Grotesk';
+  font-size: 43px;
+  margin: 16px 0 5px;
+}
+
+.price small {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.plan-desc {
+  font-size: 12px;
+  color: var(--muted);
+  min-height: 42px;
+  line-height: 1.7;
+}
+
+.features {
+  list-style: none;
+  margin: 25px 0;
+  flex: 1;
+}
+
+.features li {
+  padding: 11px 0;
+  font-size: 12px;
+  color: #dedfee;
+  border-bottom: 1px solid var(--border);
+}
+
+.features li::before {
+  content: "✓";
+  color: var(--cyan);
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.price-card .btn {
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+/* PROCESS */
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.process-card {
+  padding: 25px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  background: #101224;
+}
+
+.process-number {
+  font-size: 34px;
+  font-family: 'Space Grotesk';
+  color: var(--purple);
+}
+
+.process-card h3 { margin: 13px 0; }
+
+.process-card p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* CONTACT */
+
+.contact {
+  background:
+    radial-gradient(ellipse at 50% 100%,#6545bc35,transparent 55%),
+    #0d0f20;
+}
+
+.contact-box {
+  max-width: 750px;
+  margin: auto;
+  padding: 45px;
+  background: #15172b;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+.contact-box h2 {
+  font-family: 'Space Grotesk';
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+input, select, textarea {
+  width: 100%;
+  background: #0b0d1b;
+  border: 1px solid var(--border);
+  padding: 15px;
+  border-radius: 9px;
+  color: white;
+  outline: none;
+  font: inherit;
+  font-size: 13px;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--purple);
+}
+
+select option { background: #111326; }
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+  margin-top: 15px;
+}
+
+.full { grid-column: 1/-1; }
+
+.contact-box button {
+  margin-top: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+/* FAQ */
+
+.faq-list { max-width: 800px; margin: auto; }
+
+details {
+  background: #111326;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 12px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+details p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+  padding-top: 14px;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 35px 0;
+  background: #070811;
+  border-top: 1px solid var(--border);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+footer p {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+/* REVEAL ANIMATION */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: .7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:850px) {
+  .services-grid, .pricing-grid, .process-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-grid { gap: 30px; }
+}
+
+@media(max-width:650px) {
+  nav { height: 68px; }
+
+  .menu-btn { display: block; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background: #101224;
+    padding: 25px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-links.active { display: flex; }
+
+  .hero {
+    min-height: auto;
+    padding: 145px 0 80px;
+  }
+
+  .hero h1 { letter-spacing: -2px; }
+
+  .hero-stats { gap: 25px; }
+
+  .services-grid, .pricing-grid, .process-grid,
+  .about-grid, .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text h2 { font-size: 35px; }
+
+  .contact-box { padding: 25px; }
+
+  .contact-box h2 { font-size: 29px; }
+
+  .full { grid-column: auto; }
+
+  section { padding: 75px 0; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="#home" class="logo">
+        MORROWAVE<span>.</span>
+        <small>DIGITAL STUDIO</small>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="nav-btn">Let's Talk ↗</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content reveal">
+
+      <span class="tag">✦ Your digital growth partner</span>
+
+      <h1>
+        We Build Your<br>
+        <span class="gradient-text">Digital Future.</span>
+      </h1>
+
+      <p>
+        Your business deserves more than just an online presence.
+        We create beautiful websites, powerful branding and creative
+        digital experiences that help your business stand out.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#pricing" class="btn primary-btn">Explore Packages →</a>
+        <a href="#services" class="btn secondary-btn">Discover Services</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <h3 class="gradient-text">01</h3>
+          <p>Creative design</p>
+        </div>
+
+        <div class="stat">
+          <h3 class="gradient-text">02</h3>
+          <p>Smart solutions</p>
+        </div>
+
+        <div class="stat">
+          <h3 class="gradient-text">03</h3>
+          <p>Business focus</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+  <div class="container">
+
+    <div class="section-title reveal">
+      <span>WHAT WE DO</span>
+      <h2>Everything Your Business Needs to <span class="gradient-text">Grow Online.</span></h2>
+      <p>We combine creativity and technology to help businesses build a professional digital presence.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-icon">🌐</div>
+        <h3>Website Development</h3>
+        <p>Beautiful, responsive and professional websites designed to showcase your business and services.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🎨</div>
+        <h3>Branding & Design</h3>
+        <p>Professional promotional graphics, brand identity, banners and creative visual content.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">📱</div>
+        <h3>Social Media Design</h3>
+        <p>Eye-catching social media creatives, promotional posts and festival campaign designs.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🚀</div>
+        <h3>Digital Marketing</h3>
+        <p>Marketing planning and creative support to help your business communicate with its audience.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🔎</div>
+        <h3>SEO Basics</h3>
+        <p>Search-friendly website structure, page titles and descriptions to improve discoverability.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">💬</div>
+        <h3>Business Contact Setup</h3>
+        <p>Convenient WhatsApp, phone, map and enquiry links so customers can reach your business.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+  <div class="container about-grid">
+
+    <div class="about-visual reveal">
+      <div>
+        <strong class="gradient-text">MORROWAVE</strong>
+        <p>Creativity meets technology.</p>
+      </div>
+    </div>
+
+    <div class="about-text reveal">
+      <span class="tag">ABOUT OUR STUDIO</span>
+
+      <h2>Turning Ideas Into <span class="gradient-text">Digital Experiences.</span></h2>
+
+      <p>
+        Morrowave Digital is a growing digital studio focused on helping
+        local businesses establish a professional online presence.
+      </p>
+
+      <p>
+        From websites and promotional graphics to digital marketing
+        support, we aim to make digital solutions accessible and simple.
+      </p>
+
+      <div class="check"><span>✓</span> Modern and responsive design</div>
+      <div class="check"><span>✓</span> Clear and affordable packages</div>
+      <div class="check"><span>✓</span> Friendly project communication</div>
+      <div class="check"><span>✓</span> Solutions for local businesses</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRICING -->
+
+<section id="pricing">
+  <div class="container">
+
+    <div class="section-title reveal">
+      <span>OUR PRICING</span>
+      <h2>Simple Pricing. <span class="gradient-text">Real Value.</span></h2>
+      <p>Choose a package that matches your business needs. Final scope and costs are confirmed before work starts.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <div class="price-card reveal">
+        <div class="plan-name">Starter Presence</div>
+        <div class="price">₹499</div>
+        <p class="plan-desc">A simple website to get your business online.</p>
+
+        <ul class="features">
+          <li>One-page website</li>
+          <li>Business information</li>
+          <li>Services showcase</li>
+          <li>WhatsApp contact button</li>
+          <li>Mobile-friendly design</li>
+          <li>One revision round</li>
+        </ul>
+
+        <a href="#contact" class="btn secondary-btn">Choose Starter →</a>
+      </div>
+
+      <div class="price-card popular reveal">
+        <span class="popular-label">POPULAR</span>
+
+        <div class="plan-name">Business Growth</div>
+        <div class="price">₹999</div>
+        <p class="plan-desc">A professional website with promotional designs.</p>
+
+        <ul class="features">
+          <li>Multi-section website</li>
+          <li>Up to 5 promotional graphics</li>
+          <li>Product/service showcase</li>
+          <li>WhatsApp integration</li>
+          <li>Basic SEO setup</li>
+          <li>Location and contact links</li>
+          <li>Two revision rounds</li>
+        </ul>
+
+        <a href="#contact" class="btn primary-btn">Choose Growth →</a>
+      </div>
+
+      <div class="price-card reveal">
+        <div class="plan-name">Premium Digital</div>
+        <div class="price">₹1,999</div>
+        <p class="plan-desc">A complete starter digital presence package.</p>
+
+        <ul class="features">
+          <li>Professional website</li>
+          <li>Up to 10 promotional graphics</li>
+          <li>Promotional landing page</li>
+          <li>Basic SEO setup</li>
+          <li>Business profile guidance</li>
+          <li>One month of agreed minor updates</li>
+        </ul>
+
+        <a href="#contact" class="btn secondary-btn">Choose Premium →</a>
+      </div>
+
+    </div>
+
+    <p style="color:#a1a3bb;text-align:center;font-size:11px;margin-top:25px;line-height:1.8">
+      Introductory prices. Domain registration, paid hosting, ad spend,
+      premium assets and third-party services are extra unless agreed
+      otherwise. Campaign management and ongoing social media posting
+      require a separate quote. No guaranteed sales or rankings.
+    </p>
+
+  </div>
+</section>
+
+<!-- PROCESS -->
+
+<section style="background:#0d0f20" id="process">
+  <div class="container">
+
+    <div class="section-title reveal">
+      <span>HOW WE WORK</span>
+      <h2>From Your Idea to <span class="gradient-text">Launch.</span></h2>
+      <p>A straightforward process that keeps you involved at every step.</p>
+    </div>
+
+    <div class="process-grid">
+
+      <div class="process-card reveal">
+        <div class="process-number">01</div>
+        <h3>Understand</h3>
+        <p>We learn about your business, audience and goals before recommending a solution.</p>
+      </div>
+
+      <div class="process-card reveal">
+        <div class="process-number">02</div>
+        <h3>Create</h3>
+        <p>We design and develop your website and promotional material based on the agreed scope.</p>
+      </div>
+
+      <div class="process-card reveal">
+        <div class="process-number">03</div>
+        <h3>Launch</h3>
+        <p>You review and approve the finished work before publication.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+  <div class="container">
+
+    <div class="contact-box reveal">
+      <span class="tag">LET'S CONNECT</span>
+
+      <h2>Have a Project in Mind?</h2>
+      <p>Tell us about your business. Send an enquiry and we'll discuss your requirements.</p>
+
+      <form id="contactForm">
+
+        <div class="form-grid">
+
+          <input type="text" id="name" placeholder="Your name" required>
+
+          <input type="text" id="business" placeholder="Business name" required>
+
+          <input type="email" id="email" placeholder="Email address" required>
+
+          <select id="package" required>
+            <option value="">Select a package</option>
+            <option>Starter Presence - ₹499</option>
+            <option>Business Growth - ₹999</option>
+            <option>Premium Digital - ₹1,999</option>
+            <option>Custom project</option>
+          </select>
+
+        </div>
+
+        <textarea id="message" placeholder="Tell us what you need..." required></textarea>
+
+        <button type="submit" class="btn primary-btn">
+          Send Enquiry ↗
+        </button>
+      </form>
+
+      <p style="margin-top:20px;font-size:11px">
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+
+<section>
+  <div class="container">
+
+    <div class="section-title reveal">
+      <span>FAQ</span>
+      <h2>Frequently Asked <span class="gradient-text">Questions.</span></h2>
+    </div>
+
+    <div class="faq-list reveal">
+
+      <details>
+        <summary>How do I get started?</summary>
+        <p>Send an enquiry with your business details and requirements. We'll discuss the project scope and quote.</p>
+      </details>
+
+      <details>
+        <summary>Are the prices fixed?</summary>
+        <p>These are introductory prices. The final cost depends on your requirements and any additional services.</p>
+      </details>
+
+      <details>
+        <summary>Do you provide hosting?</summary>
+        <p>We can use free hosting for suitable projects. Custom domains and paid hosting are separate expenses.</p>
+      </details>
+
+      <details>
+        <summary>Can you create promotional posters?</summary>
+        <p>Yes. Promotional graphics and social media creatives are included in selected packages.</p>
+      </details>
+
+      <details>
+        <summary>Do you guarantee more customers?</summary>
+        <p>No. We provide design and digital support, but business results depend on many factors outside our control.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="container footer-content">
+
+    <a href="#home" class="logo">
+      MORROWAVE<span>.</span>
+      <small>DIGITAL STUDIO</small>
+    </a>
+
+    <p>© <span id="year"></span> Morrowave Digital. All rights reserved.</p>
+
+    <a href="#home" style="font-size:12px">Back to top ↑</a>
+
+  </div>
+</footer>
+
+<script>
+
+// MOBILE NAVIGATION
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  menuBtn.textContent =
+    navLinks.classList.contains("active") ? "✕" : "☰";
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    menuBtn.textContent = "☰";
+  });
+});
+
+// CONTACT FORM
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  // CHANGE THIS TO YOUR REAL BUSINESS EMAIL
+  const businessEmail = "yashkishore87@gmail.com";
+
+  const name = document.getElementById("name").value.trim();
+  const business = document.getElementById("business").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const pack = document.getElementById("package").value;
+  const message = document.getElementById("message").value.trim();
+
+  const subject = encodeURIComponent("New enquiry - Morrowave Digital");
+
+  const body = encodeURIComponent(
+    `Name: ${name}\n` +
+    `Business: ${business}\n` +
+    `Email: ${email}\n` +
+    `Package: ${pack}\n\n` +
+    `Requirements:\n${message}`
+  );
+
+  window.location.href =
+    `mailto:${businessEmail}?subject=${subject}&body=${body}`;
+});
+
+// SCROLL REVEAL
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(el => {
+  observer.observe(el);
+});
+
+// CURRENT YEAR
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
